@@ -88,8 +88,8 @@ public class LogServiceTest {
         svc.addLog("test1", usertest);
         svc.addLog("test2", usertest2);
         svc.addLog("test3", usertest3);
-        assertEquals(2, svc.getUserLogs(usertest).size());
-        assertEquals(2, svc.getUserLogs(usertest2).size());
+        assertEquals(1, svc.getUserLogs(usertest).size());
+        assertEquals(1, svc.getUserLogs(usertest2).size());
         assertEquals(1, svc.getUserLogs(usertest3).size());
     }
 }
