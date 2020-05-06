@@ -105,8 +105,8 @@ public class UserServiceTest {
 
     @Test()
     public void testAddUsersAndClear() throws Exception {
-        for (int i = 0; i < 250; i++) {
-            for (int j = 0; j < 20; j++) {
+        for (int i = 0; i < 1000; i++) {
+            for (int j = 0; j < 5000; j++) {
                 userService.addUser(new User("Test", i * j));
             }
             userService.clearUsers();
