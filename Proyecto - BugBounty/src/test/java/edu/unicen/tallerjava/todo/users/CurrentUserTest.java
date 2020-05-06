@@ -59,7 +59,7 @@ public class CurrentUserTest {
 			t2.join();
 			assertNotNull(users[0]);
 			assertNotNull(users[1]);
-			assertTrue(users[0]==users[1]);
+			assertTrue(users[0].equals(users[1]));
 		}
 	}
 }

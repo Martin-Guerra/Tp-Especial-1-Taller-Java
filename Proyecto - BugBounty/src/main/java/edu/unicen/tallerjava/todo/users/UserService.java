@@ -48,7 +48,7 @@ public class UserService {
     }
 
     public void clearUsers() {
-        this.repo.deleteAll();
+        logSvc.clear();
     }
 
     /**
